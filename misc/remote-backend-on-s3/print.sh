@@ -2,4 +2,6 @@
 echo "workdir"
 ls -la
 echo "in .terraform"
-ls -la .terraform
+if [ -d ".terraform" ]; then
+  ls -la .terraform
+fi
