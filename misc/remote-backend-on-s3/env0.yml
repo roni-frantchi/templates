@@ -4,7 +4,7 @@ deploy:
       before:
         - echo "tom"
         - ./print.sh
-        - aws s3api create-bucket --bucket env0-tf-remote-backend-bucket-tom --region us-east-1
+        - aws s3api create-bucket --bucket env0-tf-remote-backend-bucket-tom2 --region us-east-1
     terraformApply:
       after:
         - ./print.sh
