@@ -14,7 +14,7 @@ resource "aws_s3_bucket" "website_bucket" {
 
   website {
     index_document = "index.html"
-    error_document = "error.html"
+    error_document = "index.html"
   }
 }
 
@@ -43,14 +43,6 @@ POLICY
 resource "aws_s3_bucket_object" "object" {
   bucket = aws_s3_bucket.website_bucket.bucket
   key    = "index.html"
-  source = "index.html"
-  content_type = "text/html"
-}
-
-
-resource "aws_s3_bucket_object" "object2" {
-  bucket = aws_s3_bucket.website_bucket.bucket
-  key    = "error.html"
   source = "index.html"
   content_type = "text/html"
 }
