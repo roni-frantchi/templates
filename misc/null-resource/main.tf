@@ -2,7 +2,7 @@ resource "null_resource" "null" {
 }
 
 resource "null_resource" "foo" {
-  provisioner "exec" {
+  provisioner "local-exec" {
     command = "echo hello env0"
   }
 }
