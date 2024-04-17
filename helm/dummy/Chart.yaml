@@ -26,4 +26,4 @@ appVersion: "1.16.0"
 dependencies:
   - name: hello-world
     version: "0.1.0"
-    repository: "helm.github.io/examples"
+    repository: "https://helm.github.io/examples"
